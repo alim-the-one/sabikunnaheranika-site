@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Sayada Sabikunnaher Anika – Business Analyst and Project Coordination professional with 4+ years of experience driving digital transformation." />
+<meta name="author" content="Sayada Sabikunnaher Anika" />
+<meta property="og:title" content="Sayada Sabikunnaher Anika | Business Analyst" />
+<meta property="og:description" content="Business Analyst | Project Coordination & Delivery | 4+ Years Experience" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://sabikunnaheranika.com" />
+<meta property="og:image" content="https://sabikunnaheranika.com/images/anika.jpg" />
+<title>Sayada Sabikunnaher Anika | Business Analyst</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --rose:       #C9A98F;
+    --rose-light: #F2EAE2;
+    --rose-dark:  #7A5C45;
+    --ink:        #1C1512;
+    --ink-mid:    #4A3728;
+    --ink-soft:   #7D6555;
+    --cream:      #FAF7F4;
+    --cream-alt:  #F3EDE7;
+    --border:     rgba(122, 92, 69, 0.18);
+    --border-med: rgba(122, 92, 69, 0.32);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--cream);
+    color: var(--ink);
+    overflow-x: hidden;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5vw; height: 64px;
+    background: rgba(250, 247, 244, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: var(--serif); font-size: 1.15rem; font-weight: 500;
+    letter-spacing: 0.02em; color: var(--ink); text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; color: var(--ink-soft); transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--rose-dark); }
+  .nav-cta {
+    font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+    text-decoration: none; color: var(--rose-dark);
+    border: 1px solid var(--border-med); padding: 0.45rem 1.1rem;
+    border-radius: 2px; transition: background 0.2s, color 0.2s;
+  }
+  .nav-cta:hover { background: var(--rose-dark); color: var(--cream); }
+
+  /* HERO */
+  #hero {
+    min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;
+    padding-top: 64px;
+  }
+  .hero-left {
+    padding: 7vw 5vw 7vw 7vw;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .hero-eyebrow {
+    font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--rose); margin-bottom: 1.4rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .hero-eyebrow::before {
+    content: ''; display: block; width: 36px; height: 1px; background: var(--rose);
+  }
+  .hero-name {
+    font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 300; line-height: 1.08; color: var(--ink); margin-bottom: 0.3rem;
+  }
+  .hero-name em { font-style: italic; color: var(--rose-dark); }
+  .hero-title {
+    font-family: var(--serif); font-size: clamp(1rem, 1.8vw, 1.4rem);
+    font-weight: 400; color: var(--ink-soft); margin-bottom: 2rem; letter-spacing: 0.02em;
+  }
+  .hero-desc {
+    font-size: 0.92rem; color: var(--ink-mid); max-width: 420px;
+    line-height: 1.8; margin-bottom: 2.8rem;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-block; padding: 0.75rem 2rem; background: var(--ink);
+    color: var(--cream); font-size: 0.78rem; letter-spacing: 0.1em;
+    text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: background 0.2s;
+  }
+  .btn-primary:hover { background: var(--rose-dark); }
+  .btn-secondary {
+    display: inline-block; padding: 0.75rem 2rem; border: 1px solid var(--border-med);
+    color: var(--ink-mid); font-size: 0.78rem; letter-spacing: 0.1em;
+    text-transform: uppercase; text-decoration: none; border-radius: 2px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-secondary:hover { border-color: var(--rose-dark); color: var(--rose-dark); }
+
+  .hero-right {
+    background: var(--cream-alt);
+    display: flex; flex-direction: column; justify-content: flex-end;
+    align-items: center; padding: 4rem 4rem 0; position: relative; overflow: hidden;
+  }
+  .hero-right::before {
+    content: ''; position: absolute; top: 3rem; right: 3rem;
+    width: 180px; height: 180px; border-radius: 50%; border: 1px solid var(--border);
+  }
+  .hero-right::after {
+    content: ''; position: absolute; bottom: 4rem; left: 3rem;
+    width: 60px; height: 60px; border-radius: 50%; background: var(--rose-light);
+  }
+  .hero-photo-wrap {
+    width: min(340px, 80%); aspect-ratio: 3/4; border-radius: 4px 4px 0 0;
+    overflow: hidden; position: relative; z-index: 1;
+    border: 1px solid var(--border-med);
+  }
+  .hero-photo-wrap img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center top;
+    display: block;
+  }
+  .hero-stats {
+    position: absolute; left: 2rem; bottom: 6rem; z-index: 2;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .stat-pill {
+    background: rgba(250,247,244,0.95); border: 1px solid var(--border);
+    border-radius: 2px; padding: 0.6rem 1rem;
+    display: flex; align-items: baseline; gap: 0.5rem;
+  }
+  .stat-num {
+    font-family: var(--serif); font-size: 1.6rem; font-weight: 500;
+    color: var(--ink); line-height: 1;
+  }
+  .stat-label { font-size: 0.72rem; letter-spacing: 0.06em; color: var(--ink-soft); text-transform: uppercase; }
+
+  /* SECTIONS */
+  section { padding: 6rem 7vw; }
+  section:nth-child(even) { background: var(--cream-alt); }
+
+  .section-label {
+    font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--rose); margin-bottom: 0.7rem;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .section-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--rose); }
+  .section-title {
+    font-family: var(--serif); font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300; line-height: 1.15; color: var(--ink); margin-bottom: 3rem;
+  }
+  .section-title em { font-style: italic; color: var(--rose-dark); }
+
+  /* ABOUT */
+  #about .about-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 5rem; align-items: start; }
+  .about-text p { font-size: 1rem; line-height: 1.9; color: var(--ink-mid); margin-bottom: 1.2rem; }
+  .about-text p:last-child { margin-bottom: 0; }
+  .about-sidebar { display: flex; flex-direction: column; gap: 2rem; }
+  .sidebar-block { border-top: 1px solid var(--border); padding-top: 1.2rem; }
+  .sidebar-block h4 { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rose); margin-bottom: 0.8rem; }
+  .sidebar-block p, .sidebar-block li { font-size: 0.88rem; color: var(--ink-mid); line-height: 1.7; }
+  .sidebar-block ul { list-style: none; display: flex; flex-direction: column; gap: 0.3rem; }
+  .sidebar-block ul li::before { content: '→ '; color: var(--rose); }
+
+  /* EXPERIENCE */
+  #experience .timeline { position: relative; }
+  #experience .timeline::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 1px; background: var(--border);
+  }
+  .exp-item { padding-left: 2.5rem; margin-bottom: 3.5rem; position: relative; }
+  .exp-item::before {
+    content: ''; position: absolute; left: -4px; top: 0.35rem;
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--rose); border: 2px solid var(--cream); box-shadow: 0 0 0 1px var(--rose);
+  }
+  .exp-date { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose); margin-bottom: 0.3rem; }
+  .exp-role { font-family: var(--serif); font-size: 1.4rem; font-weight: 500; color: var(--ink); margin-bottom: 0.1rem; }
+  .exp-company { font-size: 0.88rem; color: var(--ink-soft); margin-bottom: 1rem; }
+  .exp-body ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+  .exp-body li { font-size: 0.88rem; color: var(--ink-mid); line-height: 1.7; padding-left: 1.2rem; position: relative; }
+  .exp-body li::before { content: '—'; position: absolute; left: 0; color: var(--rose); font-size: 0.75rem; }
+  .exp-badge {
+    display: inline-block; margin-top: 1rem; background: var(--rose-light);
+    color: var(--rose-dark); font-size: 0.72rem; letter-spacing: 0.08em;
+    padding: 0.3rem 0.8rem; border-radius: 2px; text-transform: uppercase;
+  }
+
+  /* SKILLS */
+  #skills .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2px; }
+  .skill-card { background: var(--cream); padding: 2rem 1.8rem; border: 1px solid var(--border); transition: border-color 0.2s; }
+  .skill-card:hover { border-color: var(--rose); }
+  .skill-card h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; color: var(--ink); margin-bottom: 1rem; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag { font-size: 0.72rem; padding: 0.25rem 0.65rem; border: 1px solid var(--border-med); color: var(--ink-mid); border-radius: 2px; }
+
+  /* EDUCATION */
+  #education .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+  .edu-card { padding: 2rem; border: 1px solid var(--border); border-radius: 2px; position: relative; overflow: hidden; }
+  .edu-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--rose); }
+  .edu-degree { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; color: var(--ink); margin-bottom: 0.25rem; }
+  .edu-school { font-size: 0.88rem; color: var(--rose-dark); margin-bottom: 0.5rem; font-weight: 500; }
+  .edu-year { font-size: 0.78rem; color: var(--ink-soft); margin-bottom: 0.8rem; }
+  .edu-detail { font-size: 0.84rem; color: var(--ink-mid); line-height: 1.7; }
+
+  /* ACHIEVEMENTS */
+  #achievements .ach-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+  .ach-item { display: flex; gap: 1rem; align-items: flex-start; }
+  .ach-icon { width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: var(--rose-light); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
+  .ach-text h4 { font-size: 0.88rem; font-weight: 500; color: var(--ink); margin-bottom: 0.2rem; }
+  .ach-text p { font-size: 0.8rem; color: var(--ink-soft); }
+
+  /* CERTIFICATIONS */
+  #certifications .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .cert-card { padding: 1.4rem 1.6rem; border-left: 2px solid var(--rose); background: var(--cream); }
+  .cert-title { font-size: 0.92rem; font-weight: 500; color: var(--ink); margin-bottom: 0.25rem; }
+  .cert-org { font-size: 0.8rem; color: var(--ink-soft); }
+
+  /* CONTACT */
+  #contact { background: var(--ink); color: var(--cream); }
+  #contact .section-label { color: var(--rose); }
+  #contact .section-label::before { background: var(--rose); }
+  #contact .section-title { color: var(--cream); }
+  #contact .section-title em { color: var(--rose); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .contact-intro { font-size: 0.95rem; line-height: 1.9; color: rgba(250,247,244,0.7); }
+  .contact-links { display: flex; flex-direction: column; gap: 1.2rem; }
+  .contact-link {
+    display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--cream);
+    font-size: 0.88rem; border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1.2rem; transition: color 0.2s;
+  }
+  .contact-link:hover { color: var(--rose); }
+  .contact-link-icon { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+  .contact-link-text small { display: block; font-size: 0.72rem; color: rgba(250,247,244,0.45); margin-bottom: 0.15rem; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink); border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 1.5rem 7vw; display: flex; justify-content: space-between;
+    align-items: center; flex-wrap: wrap; gap: 1rem;
+  }
+  footer p { font-size: 0.78rem; color: rgba(250,247,244,0.35); }
+
+  /* ANIMATIONS */
+  .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    #hero { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .hero-left { padding: 5rem 6vw 4rem; }
+    #about .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    nav .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="nav-logo">S. Anika</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#achievements">Recognition</a></li>
+  </ul>
+  <a href="mailto:sabikunnaher.anika@gmail.com" class="nav-cta">Get in Touch</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Business Analyst · Dhaka, Bangladesh</p>
+    <h1 class="hero-name">Sayada<br /><em>Sabikunnaher</em><br />Anika</h1>
+    <p class="hero-title">Project Coordination &amp; Delivery</p>
+    <p class="hero-desc">Results-driven Business Analyst with 4+ years driving digital transformation across enterprise software projects. I bridge the gap between business needs and technology — translating complexity into clarity.</p>
+    <div class="hero-actions">
+      <a href="#experience" class="btn-primary">View My Work</a>
+      <a href="mailto:sabikunnaher.anika@gmail.com" class="btn-secondary">Say Hello</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stats">
+      <div class="stat-pill"><span class="stat-num">4+</span><span class="stat-label">Years Exp.</span></div>
+      <div class="stat-pill"><span class="stat-num">250+</span><span class="stat-label">Man-Days Approved</span></div>
+      <div class="stat-pill"><span class="stat-num">100%</span><span class="stat-label">UAT Pass Rate</span></div>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="images/anika.jpg" alt="Sayada Sabikunnaher Anika" />
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <p class="section-label fade-in">The Person</p>
+  <h2 class="section-title fade-in">Bridging <em>business needs</em><br />with technology.</h2>
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <p>I am an experienced Business Analyst with a strong background in project coordination and delivery. Currently at BRAC IT, I support the successful delivery of multiple enterprise software projects — coordinating cross-functional teams, managing project documentation, and maintaining clear stakeholder communication.</p>
+      <p>With a focus on Agile and Scrum methodologies, I excel at task tracking, risk identification, and managing change requests. I collaborate with developers, QA teams, and delivery managers to meet project goals on time and within scope. I have also contributed to high-quality documentation that supported CMMI Level 3 certification renewal.</p>
+      <p>In my previous role at Agami Limited, I led the B2B Quality Helpline project for British American Tobacco — improving service delivery, performance analysis, and team management while consistently exceeding KPIs. My ability to drive operational efficiency and manage client relationships has resulted in measurable business outcomes across every engagement.</p>
+    </div>
+    <div class="about-sidebar fade-in">
+      <div class="sidebar-block">
+        <h4>Location</h4>
+        <p>Mirpur, Dhaka, Bangladesh</p>
+      </div>
+      <div class="sidebar-block">
+        <h4>Languages</h4>
+        <ul><li>Bangla — Native</li><li>English — Full Professional</li></ul>
+      </div>
+      <div class="sidebar-block">
+        <h4>Methodologies</h4>
+        <ul><li>Agile / Scrum</li><li>Waterfall SDLC</li><li>CMMI Level 3</li><li>BPMN Process Mapping</li></ul>
+      </div>
+      <div class="sidebar-block">
+        <h4>Contact</h4>
+        <p>sabikunnaher.anika@gmail.com<br />+88 019-5755-3990</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <p class="section-label fade-in">Professional Path</p>
+  <h2 class="section-title fade-in">Industry <em>Journey</em></h2>
+  <div class="timeline">
+
+    <div class="exp-item fade-in">
+      <p class="exp-date">July 2024 – Present</p>
+      <p class="exp-role">Business Analyst</p>
+      <p class="exp-company">BRAC IT · Dhaka</p>
+      <div class="exp-body"><ul>
+        <li>Coordinate cross-functional delivery activities across business users, developers, QA, and project managers to ensure on-time, in-scope delivery.</li>
+        <li>Lead requirement elicitation workshops and stakeholder interviews, translating business needs into SRS, user stories, workflows, and acceptance criteria.</li>
+        <li>Create and maintain structured project documentation including SRS, BRDs, process diagrams, traceability matrices, and test plans.</li>
+        <li>Support project tracking and delivery governance by monitoring progress, identifying risks, and escalating blockers early.</li>
+        <li>Ensured 100% UAT pass rate for all major change requests through rigorous BA validation and sanity testing.</li>
+        <li>Managed scope changes and CRs, supporting effort analysis resulting in 250+ man-days of approved enhancements.</li>
+        <li>Contributed high-quality documentation and delivery practices supporting CMMI Level 3 certification renewal.</li>
+      </ul></div>
+    </div>
+
+    <div class="exp-item fade-in">
+      <p class="exp-date">January 2023 – June 2024</p>
+      <p class="exp-role">Senior Executive – Customer Experience &amp; Operations</p>
+      <p class="exp-company">Agami Limited · Dhaka</p>
+      <div class="exp-body"><ul>
+        <li>Led end-to-end coordination of the BAT B2B Quality Helpline project, ensuring superior service delivery and profitability.</li>
+        <li>Coordinated operations across call center teams, vendors, and key stakeholders, ensuring all service delivery KPIs were met.</li>
+        <li>Developed structured operational documentation, reporting dashboards, and performance reviews for leadership.</li>
+        <li>Trained and managed a 25+ member team, improving escalation handling, service quality, and cross-team collaboration.</li>
+      </ul></div>
+      <span class="exp-badge">🏆 AGAMI Mavericks Award – Outstanding Leadership</span>
+    </div>
+
+    <div class="exp-item fade-in">
+      <p class="exp-date">July 2021 – December 2022</p>
+      <p class="exp-role">Customer Experience Executive (E-commerce)</p>
+      <p class="exp-company">Agami Limited · Dhaka</p>
+      <div class="exp-body"><ul>
+        <li>Supported daily operations of the SHOPOTH e-commerce platform, coordinating telesales, campaigns, and customer issue resolution.</li>
+        <li>Worked cross-functionally with marketing, logistics, and tech teams to improve customer experience and delivery outcomes.</li>
+        <li>Contributed to a 30% revenue increase through improved coordination and campaign execution.</li>
+      </ul></div>
+    </div>
+
+    <div class="exp-item fade-in">
+      <p class="exp-date">April 2021 – June 2021</p>
+      <p class="exp-role">Executive, Master Data Management</p>
+      <p class="exp-company">Agami Limited · Dhaka</p>
+      <div class="exp-body"><ul>
+        <li>Managed and maintained master data sets ensuring accuracy and consistency across operational systems.</li>
+        <li>Supported data governance and reporting initiatives within the organization.</li>
+      </ul></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <p class="section-label fade-in">The Toolkit</p>
+  <h2 class="section-title fade-in">Analytical <em>Capability</em></h2>
+  <div class="skills-grid">
+    <div class="skill-card fade-in">
+      <h3>Project &amp; Delivery</h3>
+      <div class="skill-tags">
+        <span class="tag">Project Coordination</span><span class="tag">RAID Logs</span>
+        <span class="tag">Milestone Tracking</span><span class="tag">Documentation Management</span>
+        <span class="tag">Risk Management</span><span class="tag">Scope Management</span>
+      </div>
+    </div>
+    <div class="skill-card fade-in">
+      <h3>Business Analysis</h3>
+      <div class="skill-tags">
+        <span class="tag">SRS / BRD</span><span class="tag">User Stories</span>
+        <span class="tag">Acceptance Criteria</span><span class="tag">BPMN</span>
+        <span class="tag">Process Mapping</span><span class="tag">Workflows</span><span class="tag">UAT Support</span>
+      </div>
+    </div>
+    <div class="skill-card fade-in">
+      <h3>Coordination</h3>
+      <div class="skill-tags">
+        <span class="tag">Stakeholder Management</span><span class="tag">Client-Facing Coordination</span>
+        <span class="tag">Workshop Facilitation</span><span class="tag">Meeting Management</span>
+        <span class="tag">Team Leadership</span>
+      </div>
+    </div>
+    <div class="skill-card fade-in">
+      <h3>Tools &amp; Platforms</h3>
+      <div class="skill-tags">
+        <span class="tag">Jira</span><span class="tag">Confluence</span>
+        <span class="tag">Microsoft Excel</span><span class="tag">PowerPoint</span>
+        <span class="tag">Power BI</span><span class="tag">Agile / Scrum</span><span class="tag">Waterfall SDLC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <p class="section-label fade-in">Foundations</p>
+  <h2 class="section-title fade-in"><em>Educational</em> Pedigree</h2>
+  <div class="edu-grid">
+    <div class="edu-card fade-in">
+      <p class="edu-degree">Bachelor of Business Administration</p>
+      <p class="edu-school">North South University, Dhaka</p>
+      <p class="edu-year">Finance (General) · 2017 – 2021 · GPA: 3.22</p>
+      <p class="edu-detail">Developed strong foundations in financial analysis, business operations, and strategic decision-making, alongside active participation in debate and leadership roles.</p>
+    </div>
+    <div class="edu-card fade-in">
+      <p class="edu-degree">Higher Secondary Certificate (HSC)</p>
+      <p class="edu-school">Dhaka Commerce College</p>
+      <p class="edu-year">Business Studies · 2014 – 2016</p>
+      <p class="edu-detail">Core business studies curriculum building analytical and commercial thinking foundations.</p>
+    </div>
+    <div class="edu-card fade-in">
+      <p class="edu-degree">Secondary School Certificate (SSC)</p>
+      <p class="edu-school">Monipur High School &amp; College</p>
+      <p class="edu-year">Business Studies · 2004 – 2014</p>
+      <p class="edu-detail">Early academic formation with a focus on commerce and analytical disciplines.</p>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <p class="section-label fade-in">Recognition</p>
+  <h2 class="section-title fade-in">Milestones &amp; <em>Achievements</em></h2>
+  <div class="ach-list">
+    <div class="ach-item fade-in">
+      <div class="ach-icon">🏆</div>
+      <div class="ach-text"><h4>AGAMI Mavericks Award</h4><p>Outstanding execution and leadership in the BAT B2B Quality Helpline project</p></div>
+    </div>
+    <div class="ach-item fade-in">
+      <div class="ach-icon">🥇</div>
+      <div class="ach-text"><h4>Champion, DCC Debate Competition</h4><p>Grand champion at the DCC inter-college debate circuit</p></div>
+    </div>
+    <div class="ach-item fade-in">
+      <div class="ach-icon">🎖️</div>
+      <div class="ach-text"><h4>Debater of the Tournament</h4><p>DIUDS National Championship — top individual debater recognition</p></div>
+    </div>
+    <div class="ach-item fade-in">
+      <div class="ach-icon">🥈</div>
+      <div class="ach-text"><h4>Runner-up, NSU Inter-Department</h4><p>NSU Inter-Department Debate Championship — top 2 finish</p></div>
+    </div>
+    <div class="ach-item fade-in">
+      <div class="ach-icon">📋</div>
+      <div class="ach-text"><h4>PR, Venue &amp; Logistics Manager</h4><p>NSU Debate Club (2017–2019) — organized national-level tournaments</p></div>
+    </div>
+    <div class="ach-item fade-in">
+      <div class="ach-icon">📈</div>
+      <div class="ach-text"><h4>30% Revenue Contribution</h4><p>Improved coordination and campaign execution driving measurable e-commerce growth</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <p class="section-label fade-in">Continuous Learning</p>
+  <h2 class="section-title fade-in">Certifications &amp; <em>Training</em></h2>
+  <div class="cert-grid">
+    <div class="cert-card fade-in"><p class="cert-title">Excel Skills for Business: Essentials</p><p class="cert-org">Macquarie University</p></div>
+    <div class="cert-card fade-in"><p class="cert-title">Power BI Fundamentals</p><p class="cert-org">Microsoft</p></div>
+    <div class="cert-card fade-in"><p class="cert-title">Introduction to DAX in Power BI</p><p class="cert-org">Microsoft</p></div>
+    <div class="cert-card fade-in"><p class="cert-title">Data Modeling in Power BI</p><p class="cert-org">Microsoft</p></div>
+    <div class="cert-card fade-in"><p class="cert-title">Data Preparation in Power BI</p><p class="cert-org">Microsoft</p></div>
+    <div class="cert-card fade-in"><p class="cert-title">Fundamentals of Digital Marketing</p><p class="cert-org">Google Digital Garage</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <p class="section-label fade-in">Let's Connect</p>
+  <h2 class="section-title fade-in">Start a <em>conversation</em>.</h2>
+  <div class="contact-grid">
+    <div class="contact-intro fade-in">
+      <p>I'm always open to discussing new opportunities, project collaborations, or simply connecting with like-minded professionals. Whether you have a project in mind or just want to say hello — my inbox is open.</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:sabikunnaher.anika@gmail.com" class="contact-link fade-in">
+        <div class="contact-link-icon">✉</div>
+        <div class="contact-link-text"><small>Email</small>sabikunnaher.anika@gmail.com</div>
+      </a>
+      <a href="tel:+8801957553990" class="contact-link fade-in">
+        <div class="contact-link-icon">📞</div>
+        <div class="contact-link-text"><small>Phone</small>+88 019-5755-3990</div>
+      </a>
+      <a href="https://www.linkedin.com/in/sabikunnaheranika" target="_blank" rel="noopener" class="contact-link fade-in">
+        <div class="contact-link-icon">in</div>
+        <div class="contact-link-text"><small>LinkedIn</small>linkedin.com/in/sabikunnaheranika</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Sayada Sabikunnaher Anika. All Rights Reserved.</p>
+  <p>sabikunnaheranika.com</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  document.querySelectorAll('.skills-grid, .edu-grid, .ach-list, .cert-grid').forEach(grid => {
+    [...grid.children].forEach((child, i) => {
+      child.style.transitionDelay = (i * 80) + 'ms';
+    });
+  });
+</script>
+</body>
+</html>
